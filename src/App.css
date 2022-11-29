@@ -1,0 +1,19 @@
+body {
+  background: rgb(184, 202, 214);
+  background: linear-gradient(180deg, rgb(184, 202, 214) 63%, rgba(93,104,111,1) 100%);
+  padding: 0;
+  margin: 0;
+}
+
+.Menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 1s ease;
+}
+.Menu.inactive{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: 1s ease;
+}

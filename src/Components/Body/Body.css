@@ -1,0 +1,79 @@
+.title-word {
+    animation: color-animation 3s linear infinite;
+}
+  
+.title-word-1 {
+  --color-1: #0057e7;
+  --color-2: #d62d20;
+  --color-3: #ffa700;
+}
+
+.title-word-2 {
+  --color-2: #0057e7;
+  --color-3: #d62d20;
+  --color-1: #ffa700;
+}
+
+.title-word-3 {
+  --color-3: #0057e7;
+  --color-1: #d62d20;
+  --color-2: #ffa700;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+.b, .o, .u, .n, .c, .e, .basket {
+  text-shadow: 0 3px #4361ee, 0 5px #4361ee, 0 7px #4361ee;
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1,1) translateY(0); }
+  10%  { transform: scale(1.1,.9) translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-55px);}
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  58%  { transform: scale(1,1) translateY(-7px); }
+  65%  { transform: scale(1,1) translateY(0);}
+  100% { transform: scale(1,1) translateY(0);}
+}
+
+.b {
+animation: bounce 1s ease infinite;
+}
+
+.o {
+animation: bounce 1s ease infinite .1s;
+}
+
+.u {
+animation: bounce 1s ease infinite .2s;
+}
+
+.n {
+animation: bounce 1s ease infinite .3s;
+}
+
+.c {
+animation: bounce 1s ease infinite .4s;
+}
+
+.e {
+animation: bounce 1s ease infinite .5s;
+}
+
+.basket {
+  animation: bounce 1s ease infinite .6s;
+}
+
+.text {
+  background-image: linear-gradient(90deg, blue, orange);
+  background-clip: text;
+  color: transparent;
+}
